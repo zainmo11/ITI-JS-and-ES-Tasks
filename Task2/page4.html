@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="page4.css">
+</head>
+<body>
+<div class="form-container">
+    <form action="page5.html">
+        <table >
+            <tr>
+                <td><label for="firstname">First Name</label>  </td>
+                <td><input type="text" name="firstname" id="firstname" ></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name</label></td>
+                <td><input type="text" name="lastname" id="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Gender</td>
+                <td><input type="radio" name="gender" value="male"> Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" value="female"> Female</td>
+            </tr>
+            <tr>
+                <td><label for="month">Birthday</label>
+                    <select name="month" id="month">
+                        <option>[Select a Month]</option>
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                        <option value="may">May</option>
+                        <option value="jun">June</option>
+                        <option value="jul">July</option>
+                        <option value="aug">August</option>
+                        <option value="sep">September</option>
+                        <option value="oct">October</option>
+                        <option value="nov">November</option>
+                        <option value="dec">December</option>
+                    </select></td>
+                <td>
+
+                    <input type="text" name="day" size="2" placeholder="dd">
+                    <input type="text" name="year" size="4" placeholder="yyyy">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td colspan="2" class="interests"><strong>Interests</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="interests" id="sports" value="sports">
+                    <label for="sports">Sports</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="interests" id="music" value="music">
+                    <label for="music">Music</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="interests" id="books" value="books">
+                    <label for="books">Books</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="interests" id="computer" value="computer">
+                    <label for="computer">Computer Stuff</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="interests" id="fashion" value="fashion">
+                    <label for="fashion">Fashion</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="interests" id="movies" value="movies">
+                    <label for="movies">Movies</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submit-container">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

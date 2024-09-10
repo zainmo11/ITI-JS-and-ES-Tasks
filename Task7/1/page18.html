@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="greeting"></h1>
+<div id="info"></div>
+<div id="browser-recommendation"></div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const title = params.get('title');
+    const email = params.get('email');
+    const gender = params.get('gender');
+    const mobile = params.get('mobile');
+    const address = params.get('address');
+
+    document.getElementById('greeting').textContent = `Welcome, ${title} ${name}!`;
+    document.getElementById('info').innerHTML = `
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Gender:</strong> ${gender}</p>
+      <p><strong>Mobile:</strong> ${mobile}</p>
+      <p><strong>Address:</strong> ${address}</p>
+    `;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="page5.css">
+</head>
+<body>
+<div class="login-container">
+    <form action="../Task1/page1.html">
+        <fieldset>
+            <legend>Log In</legend>
+            <table>
+                <tr>
+                    <td><label for="username">User Name:</label></td>
+                    <td><input type="text" id="username" placeholder="Enter your User name here!"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">PassWord:</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="location">Select Your Location:</label></td>
+                    <td>
+                        <select id="location">
+                            <optgroup label="Africa">
+                                <option value="egypt">Egypt</option>
+                                <option value="sudan">Sudan</option>
+                                <option value="namibia">Namibia</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="france">France</option>
+                                <option value="russia">Russia</option>
+                                <option value="uk">UK</option>
+                            </optgroup>
+                            <optgroup label="North America" disabled>
+                                <option value="canada">Canada</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="usa">USA</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label><input type="checkbox" id="rememberme"> RememberMe</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Log In"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

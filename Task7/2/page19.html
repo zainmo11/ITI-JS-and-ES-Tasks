@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #gallery {
+            margin: 20px;
+        }
+        #gallery img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+        .controls {
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Photo Gallery</h1>
+
+<div id="gallery">
+    <img id="image" src="img/1.jpg" alt="Gallery Image">
+</div>
+
+<div class="controls">
+    <button id="previous">Previous</button>
+    <button id="next">Next</button>
+    <button id="slideshow">Start Slideshow</button>
+    <button id="stop">Stop Slideshow</button>
+</div>
+<script src="script12.js"></script>
+</body>
+</html>

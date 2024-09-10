@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+        <input type="text" id="title" name="title" placeholder="Job Title" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="text" id="gender" name="gender" placeholder="Gender" required>
+        <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const title = document.getElementById('title').value;
+        const email = document.getElementById('email').value;
+        const gender = document.getElementById('gender').value;
+        const mobile = document.getElementById('mobile').value;
+        const address = document.getElementById('address').value;
+
+        const queryString = `name=${encodeURIComponent(name)}&title=${encodeURIComponent(title)}&email=${encodeURIComponent(email)}&gender=${encodeURIComponent(gender)}&mobile=${encodeURIComponent(mobile)}&address=${encodeURIComponent(address)}`;
+        window.location.href = `page18.html?${queryString}`;
+    });
+</script>
+</body>
+</html>
